@@ -5,8 +5,8 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 export async function login(email: string, password: string) {
-    const API_BASE = process.env.API_URL;
-
+  const API_BASE = process.env.API_URL;
+  console.log(API_BASE);
   // APIトークンログイン（Sanctum Personal Access Token）
   const loginRes = await fetch(`${API_BASE}/api/login`, {
     method: "POST",

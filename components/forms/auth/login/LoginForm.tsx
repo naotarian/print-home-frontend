@@ -70,7 +70,10 @@ const LoginForm = () => {
           </div>
           <Button 
             type="submit" 
-            className="w-full h-12 text-base font-medium"
+            className="w-full"
+            variant="outline"
+            size="lg"
+            color="primary"
             disabled={isLoading}
           >
             {isLoading ? (
